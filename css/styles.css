@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-  padding: 0;
+  padding: 10;
   margin: 0;
   border: 0;
   box-sizing: border-box;
