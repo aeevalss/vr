@@ -33,3 +33,9 @@ $(document).ready(function () {
       $(this).toggleClass('active').next().slideToggle(300);
    });
 });
+$(document).ready(function () {
+   $('.avatar-image').click(function () {
+      $(this).toggleClass('active').next().slideToggle(300);
+   });
+});
+

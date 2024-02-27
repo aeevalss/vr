@@ -1735,3 +1735,162 @@ video:hover {
       padding: 0px 12px;
    }
 }
+
+//==================TESTIM-SECTION=================================
+.testim {
+   padding: 0px 25px 0px 25px;
+   margin-top: 220px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+   }
+
+   &__caption {
+      @extend %gradient;
+      padding: 0px 0px 10px 0px;
+   }
+
+   &__title {
+      @extend %for-h2;
+   }
+}
+
+.testim-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 1247px;
+   width: 100%;
+}
+
+.testim-circle {
+   position: relative;
+   background-image: url(/img/TESTIMONIAL.svg);
+   background-size: 100% 100%;
+   width: 100%;
+   height: auto;
+   max-height: 100%;
+   min-height: 1247px;
+}
+
+.avatar {
+   width: 75px;
+   height: 75px;
+
+   &__box {
+      background: rgba(37, 37, 50, 0.77);
+      padding: 10px 19px 13px 23px;
+      width: 297px;
+      margin: 10px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: none;
+   }
+
+   &__text {
+      color: rgb(209, 209, 209);
+      font-size: 12px;
+      line-height: 20px;
+      padding: 0px 0px 5px 0px;
+   }
+
+   &__name {
+      padding-bottom: 3px;
+      border-image: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%) 1;
+      border-bottom: 1px;
+      border-style: solid;
+   }
+}
+
+.avatar-image {
+   cursor: pointer;
+}
+
+.avatar {}
+
+.avatar1 {
+   margin: 5% 0% 0% 4%;
+}
+
+.avatar2 {
+   margin: 12% 0% 0% 0%;
+}
+
+.avatar3 {
+   margin: 5% 0% 0% 24%;
+}
+
+.avatar4 {
+   margin: 0% 0% 0% 80%;
+}
+
+.avatar5 {
+   margin: -40% 0% 0% 90%;
+}
+
+.avatar-onclick {
+   position: absolute;
+   left: 0px;
+   top: 100px;
+}
+
+@media screen and (max-width: 1085px) {
+   .testim {
+      margin-top: 0px;
+   }
+
+   .testim__header {
+      padding-top: 30%;
+   }
+
+   .testim__title {
+      font-size: 32px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .testim {
+      // margin-top: -100px;
+      margin-top: 450px;
+   }
+
+   .testim__header {
+      padding-top: 300px;
+      text-align: center;
+   }
+
+   .avatar>img {
+      width: 35px;
+   }
+
+   .testim-circle {
+      width: 100%;
+      position: absolute;
+      min-height: 1247px;
+   }
+
+   .avatar1 {
+      display: none;
+   }
+
+   .avatar2 {
+      margin: 12% 0% 0% 5%;
+   }
+
+   .avatar__box {
+      width: 100px;
+   }
+
+   .avatar__box {
+      opacity: 0;
+   }
+}
