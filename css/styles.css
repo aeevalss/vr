@@ -1448,6 +1448,14 @@ video:hover {
   cursor: pointer;
 }
 
+.avatar-image:focus {
+  transform: scale(1.1);
+}
+
+.avatar {
+  transform: scale(1.1);
+}
+
 .avatar1 {
   margin: 5% 0% 0% 4%;
 }
@@ -1494,7 +1502,7 @@ video:hover {
     text-align: center;
   }
   .avatar > img {
-    width: 35px;
+    width: 40px;
   }
   .testim-circle {
     width: 100%;
