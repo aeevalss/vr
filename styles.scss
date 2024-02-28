@@ -127,10 +127,10 @@ body {
       transition: all .3s ease 0s;
    }
 
-   &__btn:hover {
-      background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
-      cursor: pointer;
-   }
+   // &__btn:hover {
+   //    background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
+   //    cursor: pointer;
+   // }
 
    &__btn>span {
       color: rgb(255, 255, 255);
@@ -141,6 +141,20 @@ body {
       letter-spacing: 0%;
    }
 
+}
+
+@media (hover:hover) {
+   .header__btn:hover {
+      background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
+      cursor: pointer;
+   }
+}
+
+@media (hover:none) {
+   .header__btn:active {
+      background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
+      cursor: pointer;
+   }
 }
 
 .main {
@@ -467,15 +481,6 @@ body {
       width: 25px;
       height: 25px;
    }
-
-   .header__btn:focus {
-      background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
-      cursor: pointer;
-   }
-
-   .header__btn:hover {
-      background: none;
-   }
 }
 
 //====================VIRTUAL REALITY-SECTION==============================
@@ -535,19 +540,12 @@ body {
 
 .column {
 
-   &__title-desc {}
 
    &__btn {
       padding: 20px 32px;
       background: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
-      transition: box-shadow .3s ease;
+      transition: all .3s ease;
    }
-
-   &__btn:hover {
-      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
-      cursor: pointer;
-   }
-
 
    &__btn>span {
       color: rgb(255, 255, 255);
@@ -561,6 +559,19 @@ body {
    &__client {
       padding-top: 42px;
       display: flex;
+   }
+}
+
+@media (hover:hover) {
+   .column__btn:hover {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
+      cursor: pointer;
+   }
+}
+
+@media (hover:none) {
+   .column__btn:active {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
    }
 }
 
@@ -953,7 +964,17 @@ body {
       @extend %in-btn;
    }
 
-   &__btn:hover {
+}
+
+@media (hover:hover) {
+   .info__btn:hover {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
+      cursor: pointer;
+   }
+}
+
+@media (hover:none) {
+   .info__btn:active {
       box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
       cursor: pointer;
    }
@@ -1683,13 +1704,22 @@ body {
       margin-top: 40px;
    }
 
-   &__btn:hover {
+   &__btn>span {
+      @extend %in-btn;
+   }
+}
+
+@media (hover:hover) {
+   .how__btn:hover {
       box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
       cursor: pointer;
    }
+}
 
-   &__btn>span {
-      @extend %in-btn;
+@media (hover:none) {
+   .how__btn:active {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
+      cursor: pointer;
    }
 }
 
@@ -1867,6 +1897,7 @@ video:hover {
    .testim {
       // margin-top: -100px;
       margin-top: 450px;
+      padding: 0px 12px;
    }
 
    .testim__header {
@@ -1898,5 +1929,273 @@ video:hover {
 
    .avatar__box {
       opacity: 0;
+   }
+}
+
+//========================PRICING SECTION============================================
+.pricing {
+   margin-top: 100px;
+   padding: 0px 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__caption {
+      @extend %gradient;
+      width: 110px;
+   }
+
+   &__title {
+      @extend %for-h2;
+      padding: 12px 0px 16px 0px;
+   }
+
+   &__text {
+      @extend %simple-text;
+      max-width: 625px;
+      color: rgb(176, 176, 178);
+   }
+
+   &__box {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      background: rgba(37, 37, 50, 0.81);
+      position: relative;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+   }
+}
+
+.pricing-container {
+   position: relative;
+}
+
+.gradient {
+   position: absolute;
+   filter: blur(210px);
+   background: linear-gradient(135.32deg, rgba(28, 196, 249, 0.8) 4.609%, rgba(254, 105, 254, 0.8) 95.053%);
+   width: 363px;
+   height: 826px;
+   top: 100px;
+   right: 200px;
+   z-index: 1;
+   transform: rotate(-90.00deg);
+}
+
+.box {
+
+   &__about {
+      padding-right: 118px;
+   }
+}
+
+.about-inner {
+   padding: 55px 0px 55px 42px;
+}
+
+.about {
+
+   &__element {
+      display: flex;
+
+   }
+
+   &__element:not(:last-child) {
+      margin-bottom: 32px;
+   }
+}
+
+.element {
+
+   &__content {
+      padding-left: 16px;
+   }
+}
+
+.content {
+
+   &__title {
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0px;
+   }
+
+   &__text {
+      padding-top: 12px;
+      color: rgb(176, 176, 178);
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0%;
+      max-width: 582px;
+   }
+}
+
+.man-price-inner {
+   display: flex;
+}
+
+.man-price {
+
+   &__border {
+      width: 1px;
+      height: 447px;
+      background: rgb(255, 255, 255);
+      opacity: 0.1;
+      margin: 41px 40px 0px 0px;
+
+   }
+
+   &__img {
+      margin-top: 67px;
+   }
+
+   &__value {
+      position: absolute;
+      bottom: -52px;
+      right: 110px;
+      padding: 16px 69px 16px 70px;
+      background: rgb(37, 37, 50);
+      border-image: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%) 1;
+      border-width: 1px;
+      border-style: solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+   }
+}
+
+.value {
+
+   &__start {
+      color: rgb(209, 209, 209);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0%;
+   }
+
+   &__cost {
+      color: rgb(255, 255, 255);
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 66px;
+      letter-spacing: 0px;
+      padding: 3px 0px 12px 0px;
+   }
+
+   &__button {
+      @extend %for-btn;
+   }
+
+   &__button>span {
+      @extend %in-btn;
+   }
+
+   &__guarantee {
+      color: rgb(176, 176, 178);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      padding-top: 14px;
+   }
+}
+
+@media (hover:hover) {
+   .value__button:hover {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
+      cursor: pointer;
+   }
+}
+
+@media (hover:none) {
+   .value__button:active {
+      box-shadow: -10px 0px 30px -10px rgb(12, 186, 241), 20px 0px 30px -10px rgb(233, 92, 233);
+      cursor: pointer;
+   }
+}
+
+@media screen and (max-width:1085px) {
+   .pricing__title {
+      font-size: 32px;
+   }
+
+   .pricing__box {
+      flex-direction: column;
+   }
+
+   .man-price__img {
+      margin-top: 37px;
+      align-self: self-end;
+   }
+
+   .man-price-inner {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .man-price__border {
+      width: 100%;
+      max-width: 447px;
+      height: 1px;
+      background: rgb(255, 255, 255);
+      opacity: 0.1;
+      margin: 41px 40px 0px 0px;
+      padding: 0px 22px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .pricing {
+      margin-top: 400px;
+      padding: 0px 12px;
+   }
+
+   .box__about {
+      padding: 0px;
+   }
+
+   .man-price__img>img {
+      max-width: 256px;
+      max-height: 370px;
+      height: auto;
+   }
+
+   .man-price {
+      width: 100%;
+      height: auto;
+   }
+
+   .man-price__value {}
+
+   .about-inner {
+      padding: 32px 22px 0px 22px;
+   }
+}
+
+@media screen and (max-width:480px) {
+   .man-price__border {
+      max-width: 200px;
+      margin-right: -22px;
+   }
+
+   .man-price__value {
+      bottom: -52px;
+      right: 50px;
+      padding: 16px 29px 16px 29px;
+      background: rgb(37, 37, 50);
+      border-image: linear-gradient(90.00deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%) 1;
+      border-width: 1px;
+      border-style: solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
    }
 }
