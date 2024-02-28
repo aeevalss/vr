@@ -1407,7 +1407,7 @@ video:hover {
 
 .testim-circle {
   position: relative;
-  background-image: url("img/TESTIMONIAL.svg");
+  background-image: url("../img/TESTIMONIAL.svg");
   background-size: 100% 100%;
   width: 100%;
   height: auto;
