@@ -1790,6 +1790,7 @@ video:hover {
   height: 800px;
   left: -300px;
   top: 0px;
+  pointer-events: none;
 }
 
 .back-rows {
@@ -1797,6 +1798,7 @@ video:hover {
   top: 200px;
   left: -1300px;
   height: 1000px;
+  pointer-events: none;
 }
 
 .articles-inner {
