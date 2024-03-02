@@ -4,6 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Подключение слайдера -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <!-- Подключение css-стилей -->
    <link rel="stylesheet" href="./css/styles.css">
    <!-- Подключение иконки на вкладке сайта -->
@@ -112,7 +115,7 @@
                         <p class="title-desc__description">Experience Unforgettable Events in VR. Bring your events to
                            life like never before with our VR services</p>
                      </div>
-                     <button type="button" class="column__btn"><span>discover more</span></button>
+                     <a href="#tables"><button type="button" class="column__btn"><span>discover more</span></button></a>
                      <div class="column__client">
                         <div class="client__row">
                            <div class="row__imgs">
@@ -139,7 +142,7 @@
                <div class="vr-down">
                   <div class="vr__tables">
                      <div class="tables-container">
-                        <div class="tables__first">
+                        <div id="tables" class="tables__first">
                            <img src="./img/expertise.svg" alt="expertise">
                            <div class="table__script">
                               <h6 class="script__caption">Expertise</h6>
@@ -542,6 +545,189 @@
                </div>
             </div>
             <div class="gradient"></div>
+         </div>
+      </div>
+      <!-- ARTICLES-SECTION -->
+      <div class="articles">
+         <div class="articles-container">
+            <div class="articles-inner">
+               <div class="articles__header">
+                  <h6 class="articles__caption">our articles</h6>
+                  <div class="articles__title-btn">
+                     <h2 class="title-btn__title">Stay Up-to-Date with Our VR Insights</h2>
+                     <a href="#news"><button type="button" class="title-btn__btn"><span href="#">see
+                              all</span></button></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="articles__article">
+            <img class="back-light" src="./img/Light (1).svg" alt="gradient-light">
+            <img class="back-rows" src="./img/Group 10.svg" alt="back-sticks">
+            <div class="article-container">
+               <div class="article__swiper-heading">
+                  <h4 class="swiper-heading__head">Popular Article</h4>
+                  <div class="swiper">
+                     <!-- Additional required wrapper -->
+                     <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide1 slide">
+                           <div class="slide__img">
+                              <img src="./img/slide1.png" alt="slide">
+                              <div class="img__contains">
+                                 <div class="contains__circle">
+                                    <span>VR Games</span>
+                                 </div>
+                                 <div class="arrow-title">
+                                    <div class="arrow-title__title">Entertainment Goes Virtual: The Rise of VR Gaming
+                                    </div>
+                                    <div class="arrow-title__arrow">
+                                       <img src="./img/arrow-art.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide slide2 slide">
+                           <div class="slide__img">
+                              <img src="./img/slide2.png" alt="slide">
+                              <div class="img__contains">
+                                 <div class="contains__circle">
+                                    <span>VR Architecture</span>
+                                 </div>
+                                 <div class="arrow-title">
+                                    <div class="arrow-title__title">Entertainment Goes Virtual: The Rise of VR Gaming
+                                    </div>
+                                    <div class="arrow-title__arrow">
+                                       <img src="./img/arrow-art.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide slide3 slide">
+                           <div class="slide__img">
+                              <img src="./img/slide3.png" alt="slide">
+                              <div class="img__contains">
+                                 <div class="contains__circle">
+                                    <span>VR Education</span>
+                                 </div>
+                                 <div class="arrow-title">
+                                    <div class="arrow-title__title">Entertainment Goes Virtual: The Rise of VR Gaming
+                                    </div>
+                                    <div class="arrow-title__arrow">
+                                       <img src="./img/arrow-art.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide slide4 slide">
+                           <div class="slide__img">
+                              <img src="./img/slide4.png" alt="slide">
+                              <div class="img__contains">
+                                 <div class="contains__circle">
+                                    <span>VR Entertainment</span>
+                                 </div>
+                                 <div class="arrow-title">
+                                    <div class="arrow-title__title">Entertainment Goes Virtual: The Rise of VR Gaming
+                                    </div>
+                                    <div class="arrow-title__arrow">
+                                       <img src="./img/arrow-art.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Pagination -->
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+               <div id="news" class="article__news">
+                  <div class="news-container">
+                     <h4 class="news__title">Recent Article</h4>
+                     <div class="news-information">
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article1.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Education</span></div>
+                                 <div class="name-text__text">How VR is Revolutionizing the
+                                    Classroom</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article2.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Architecture</span></div>
+                                 <div class="name-text__text"> How VR is Changing Architecture
+                                 </div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article3.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Entertainment</span></div>
+                                 <div class="name-text__text">The Power of VR for Corporate and
+                                    Special Occasions</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article4.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Event</span></div>
+                                 <div class="name-text__text">The Power of VR for Corporate and
+                                    Special Occasions</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article2.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Entertainment</span></div>
+                                 <div class="name-text__text">The Benefits of VR Travel</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article4.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Education</span></div>
+                                 <div class="name-text__text">How VR is Revolutionizing the
+                                    Classroom</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                        <div class="news__inform">
+                           <div class="inform__img"><img src="./img/article3.png" alt="imagevr"></div>
+                           <div class="inform__shortly">
+                              <div class="shortly__name-text">
+                                 <div class="name-text__name"><span>VR Event</span></div>
+                                 <div class="name-text__text">The Power of VR for Corporate and
+                                    Special Occasions</div>
+                              </div>
+                              <div class="shortly__arrow"><img src="./img/arrow-art.svg" alt="arrow"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>

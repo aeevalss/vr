@@ -39,3 +39,23 @@ $(document).ready(function () {
    });
 });
 
+// SWIPER
+new Swiper('.swiper', {
+   speed: 900,
+   spaceBetween: 0,
+   autoplay: {
+      delay: 5000,
+   },
+   grabCursor: true,
+   effect: 'slide',
+   pagination: {
+      el: '.swiper-pagination',
+      //Буллеты
+      clickable: true,
+      dynamicBullets: true,
+   },
+   slidesPerView: 1,
+   paginationClickable: true,
+   autoHeight: true,
+   stopOnLastSlide: false,
+});
